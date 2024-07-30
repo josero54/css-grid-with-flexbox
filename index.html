@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Css grid with FlexBox</title>
+    <title>CSS Grid with FlexBox</title>
 </head>
 <body>
-    <div class="main_container" id="main">
-        
+    <div id="size">
+        <label for="range_size" id="title">How many squares do you want?</label>
+        <input type="range" name="size" min="0" max="256" id="range_size" value="0">
+    </div>
+    <div class="main-container-wrapper">
+        <div class="main_container" id="main"></div>
     </div>
     <script type="module" src="./scripts/main.js"></script>
 </body>
